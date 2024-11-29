@@ -69,3 +69,9 @@ body{
     margin-bottom: 10px;
 }
 
+footer{
+    background-color: rgb(140, 106, 76);
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px 0;
+}
