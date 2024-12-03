@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Montserrat"
+}
+
+.container {
+    display: block;
+    max-width: 2200px;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -46,10 +55,6 @@ body{
     margin-bottom: 20px;
 }
 
-.featured-products{
-    padding: 50px;
-    text-align: center;
-}
 
 .product-list{
     display: flex;
@@ -58,15 +63,86 @@ body{
 }
 
 .product{
-    width: 300px;;
-    margin-bottom: 30px;
+    width: 300px;
+    margin-bottom: 100px;
 }
 
 .product img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    margin-bottom: 10px;
+}
+
+#product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+#featured-products h2 {
+    font-size: 60px;
+    font-weight:bolder
+    font-weight: normal;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.product {
+    border-radius: 10px;
+    background-color: rgb(207, 155, 77);
+    width: 25%;
+    margin-left: 50px
+}
+
+.product-card-header {
+    border-bottom: 1px solid #000000;
+    padding: 30px;
+}
+
+.product-card-header h3 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.product-card-header p {
+    font-size: 26px;
+    font-weight: light;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.product-card-content {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+}
+
+.product-card-content img{
+width: 70%;
+height: 100%;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+
+.product-card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.btn-compra {
+    padding: 10px 40px;
+    background-color: rgb(125, 24, 24);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
 }
 
 footer{
