@@ -16,12 +16,16 @@ body{
     margin: 0 auto;
 }
 
+header h1{
+    font-size: 35px;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: bisque;
+    background-color: rgb(247, 213, 171);
 }
 
 .nav-links{
@@ -31,8 +35,36 @@ body{
     display: flex;
 }
 
+.nav-links :hover{
+    color: brown;
+}
+
 .nav-links li{
     margin-left: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight:600;
+    margin-right: 50px;
+}
+
+#btn-compra-inicio{
+    padding: 10px 40px;
+    background-color: rgb(125, 24, 24);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    margin-top: 30px;
+}
+
+.hero-content a :hover{
+    color: black;
 }
 
 .hero{
@@ -51,10 +83,17 @@ body{
 }
 
 .hero h2{
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
+.hero p{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: rgb(207, 155, 77)
+    margin-top: 5px;
+    margin-top: 5px;
+}
 
 .product-list{
     display: flex;
@@ -81,21 +120,21 @@ body{
 #featured-products h2 {
     font-size: 60px;
     font-weight:bolder
-    font-weight: normal;
+    padding-bottom: 30px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-}
+} 
 
 .product {
     border-radius: 10px;
-    background-color: rgb(207, 155, 77);
+    background-color:rgb(247, 213, 171);
     width: 25%;
     margin-left: 50px
 }
 
 .product-card-header {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px dotted #a44b0c;
     padding: 30px;
 }
 
@@ -146,8 +185,53 @@ margin-bottom: 10px;
 }
 
 footer{
-    background-color: rgb(140, 106, 76);
-    color: antiquewhite;
+    padding: 16px;
+    background-color: #e3dfdf;
+    margin: 0 auto;
+    align-content: center;
+}
+
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-contacto{
+    display: flex;
+    /*esto sirve para acomodar la lista hacia abajo*/
+    flex-direction: column;
+}
+
+.footer-contacto h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.footer-contacto a{
+    text-decoration: none;
+    color:rgb(125, 24, 24);
+    font-weight: bold;
+    display: block; /*esto se usa para poder poner margenes arriba y abajo*/
+    margin-left: 100px;
+    margin-bottom: 16px;
+}
+
+/*para alinear íconos*/
+.footer-contacto i{
+    width: 20px;
     text-align: center;
-    padding: 10px 0;
+    margin-right: 15px;
+}
+
+.footer-redes{
+    display: flex;
+    margin-right: 100px;
+}
+
+.footer-redes i{
+    font-size: 40px;
+    color:rgb(125, 24, 24);
+    margin-right: 20px;
 }
