@@ -203,27 +203,24 @@ margin-bottom: 10px;
     object-fit: cover;
 }
 
+/*Seccion de personal*/
 .equipo{
-    width: 50px;
-    text-align: center;
+    background-color: antiquewhite;
 }
-
-.miembro img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 .equipo-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .miembro{
     width: 200px;
     margin-bottom: 35px;
+}
+.miembro img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 footer{
@@ -276,4 +273,20 @@ footer .contenido{
     font-size: 40px;
     color:rgb(125, 24, 24);
     margin-right: 20px;
+}
+
+.newsletter input[type="email"]{
+    padding: 8px;
+    border: 2px solid orange;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.newsletter button[type="submit"]{
+    background-color: rgb(143, 189, 73);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
