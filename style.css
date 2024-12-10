@@ -336,14 +336,21 @@ body{
 }
 
 /*Seccion de personal*/
-.equipo{
-    background-color: antiquewhite;
-}
 .equipo-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
+
+.equipo h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight:lighter;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .miembro{
     width: 200px;
     margin-bottom: 35px;
@@ -355,74 +362,172 @@ body{
     object-fit: cover;
 }
 
-footer{
-    padding: 16px;
-    background-color: #e3dfdf;
-    margin: 0 auto;
-    align-content: center;
+.miembro h3{
+    color: white;
+    text-align: left;
 }
 
-footer .contenido{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+.miembro p{
+    color: white;
+    text-align: left;
 }
 
-.footer-contacto{
-    display: flex;
-    /*esto sirve para acomodar la lista hacia abajo*/
-    flex-direction: column;
-}
+/*experiencias*/
 
-.footer-contacto h2{
-    font-size: 50px;
+
+
+#parte-cinco h3{
+    color: white;
+    font-size: 35px;
+    text-align: right;
     margin-bottom: 20px;
-    margin-left: 100px;
 }
 
-.footer-contacto a{
-    text-decoration: none;
-    color:rgb(125, 24, 24);
-    font-weight: bold;
-    display: block; /*esto se usa para poder poner margenes arriba y abajo*/
-    margin-left: 100px;
-    margin-bottom: 16px;
+#parte-cinco h3 span{
+    font-style: italic;
 }
 
-/*para alinear íconos*/
-.footer-contacto i{
-    width: 20px;
-    text-align: center;
-    margin-right: 15px;
+#galeria-2{
+    width: 100vw;
 }
 
-.footer-redes{
+.card-experiencias{
     display: flex;
-    margin-right: 100px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
-.footer-redes i{
-    font-size: 40px;
-    color:rgb(125, 24, 24);
-    margin-right: 20px;
+.columna-experiencias{
+    align-items: center;
+    background-color: white;
+    width: 60vh;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.columna-experiencias img{
+    width: 80vw;
+    padding-left: 1vw;
+    padding-top: 4vh;
+    margin-top: 10px;
+}
+
+.columna-experiencias p{
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.columna-experiencias p span{
+    color: rgb(14, 107, 93);
+}
+
+.splide__slide img {
+    vertical-align: bottom;
+    width: 45vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img-expeciencias img{
+    height: 250px;
+}
+
+#experiencias-sec h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight:lighter;
+    padding-top: 30px;
+}
+
+
+
+/*footer*/
+.container-footer{
+    background-color: #8073cd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-footer-b{
+    background-color: #345125;
+    color: white;
+}
+
+.lista-footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.lista-extendida{
+    width: 280px;
+}
+
+.lista-extendida2{
+    width: 330px;
+}
+
+.lista-footer ul{
+    list-style: none;
+}
+
+.lista-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.lista-footer a span{
+    font-weight: bold;
+}
+
+.lista-footer img{
+    width: 7vw;
+}
+
+.container-footer-b p{
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+}
+
+.newsletter{
+    background-color: #8073cd;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter h3{
+    color: white;
+    font-weight: lighter;
+    margin-right: 10px;
 }
 
 .newsletter input[type="email"]{
     padding: 8px;
-    border: 2px solid orange;
+    border: 2px solid rgb(102, 101, 101);
     border-radius: 3px;
     margin-bottom: 10px;
+    width: 200px;
 }
 
 .newsletter button[type="submit"]{
-    background-color: rgb(143, 189, 73);
+    background-color: #2fb1ca;
     color: white;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: "Montserrat";
 }
 
+
+
+/****página independiente menu****/
 #sandwiches{
     padding: 50px;
     text-align: center;
