@@ -57,12 +57,10 @@ body{
 
 #btn-compra-inicio{
     padding: 10px 40px;
-    background-color: rgb(125, 24, 24);
+    background-color: #2fb1ca;
     color: white;
-    border-radius: 20px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     border: none;
     margin-top: 30px;
 }
@@ -72,7 +70,7 @@ body{
 }
 
 .hero{
-    background-image: url(https://media.admagazine.com/photos/618a635c5e45a526c6be8c7a/master/pass/76739.jpg);
+    background-image: url(img-friends/CentralPerkPrivateEvents-jpg.webp);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -86,17 +84,31 @@ body{
     align-items: center;
 }
 
-.hero h2{
-    font-size: 4rem;
-    margin-bottom: 10px;
+.hero-content img{
+    width: 25vw;
+    margin-bottom: 20px;
 }
 
+
 .hero p{
-    font-size: 2rem;
+    font-size: 25px;
     margin-bottom: 20px;
-    background-color: rgb(207, 155, 77)
+    background-color: rgb(207, 155, 77);
     margin-top: 5px;
     margin-top: 5px;
+    backdrop-filter: blur(10px); /*Para blurear el fondo*/
+    width: 50vw;
+}
+
+.hero p span{
+    font-style: italic;
+}
+
+
+/****TERMINA HEADER, COMIENZA CONTENIDO****/
+
+.container{
+    background-image: url(img-friends/background\ negro.jpg);
 }
 
 .product-list{
@@ -122,77 +134,90 @@ body{
 }
 
 #featured-products h2 {
-    font-size: 60px;
-    font-weight:bolder
-    padding-top: 30px;
+    font-size: 50px;
+    font-weight:lighter;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    color: white;
 } 
 
+.bebidas{
+    display: flex;
+    justify-content: center;
+}
 
-.product {
+.card-bebida{
+    height: 270px;
+    width: 150px;
+    padding: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border-radius: 10px;
-    background-color:rgb(247, 213, 171);
-    width: 25%;
-    margin-left: 50px
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto de zoom */
+    background-size: cover;
+    background-position: center; 
 }
 
-.product-card-header {
-    border-bottom: 1px dotted #a44b0c;
-    padding: 30px;
+.img1{
+    background-image: url(img/americano.jpg);
 }
 
-.product-card-header h3 {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
+.img2{
+    background-image: url(img/capuccino.jpg);
 }
 
-.product-card-header p {
-    font-size: 26px;
-    font-weight: light;
-    text-align: center;
-    margin: 5px 0;
+.img3{
+    background-image: url(img/coldbrew.jpg);
 }
 
-.product-card-content {
-    padding: 15px 30px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 250px;
+.img4{
+    background-image: url(img/MATCHA.jpg);
 }
 
-.product-card-content img{
-width: 70%;
-height: 100%;
-object-fit: cover;
-margin-bottom: 10px;
+.img5{
+    background-image: url(img/TARO.png);
+}
+
+.img6{
+    background-image: url(img/DRAGONFRUIT.webp);
 }
 
 
-.product-card-footer {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
+.card-bebida:hover .img1 {
+    background-size: 120%; /* Aumenta el tamaño de la imagen al hacer hover */
 }
 
-.btn-compra {
-    padding: 10px 40px;
-    background-color: rgb(125, 24, 24);
+.card-bebida:hover {
+    transform: scale(1.05); /* Ligeramente aumenta el tamaño de la tarjeta */
+}
+
+.card-bebida h3{
     color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 26px;
+    font-size: 11px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-bebida h3 span{
+    color: black;
 }
 
 /*POSTRES*/
 .postres{
     padding: 50px;
     text-align: center;
+    color: white;
 }
 
 .grid-container{
