@@ -12,13 +12,12 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h1>Mi Cafetería</h1>
+                <img src="img-friends/logo central perk.webp" alt="">
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('index.html')">BACK TO MAIN PAGE</a></li>
+                <li><a href="#sandwiches">MENÚ</a></li>
+                <li><a href="#footer-id">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -26,15 +25,17 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h2>El mejor café de la ciudad</h2>
-            <p>Disfruta de una experiencia única con nuestros granos seleccionados.</p>
-            <a href="#" id="btn-compra-inicio">Ver Menú</a>
+            <img src="img-friends/the friends experience.webp" alt="">
+            <a href="#"  onclick="redirigir('menu.html')" id="btn-compra-inicio">VER MENÚ</a>
         </div>
     </section>
 
 
     <section id="sandwiches">
-        <h2>Nuestros Sándwiches</h2>
+        <div id="franja-azul"></div>
+        <div id="franja-roja"></div>
+        <div id="franja-amarilla"></div>
+        <h2>NUESTROS SÁNDWICHES</h2>
         <div class="grid-sandwich">
 
             <div class="sandwich">
@@ -69,30 +70,52 @@
         </div>
     </section>
 
-    <footer>
-        <div class="contenido">
-            <div class="footer-contacto">
-                <h2>Visítanos</h2>
-                <a href="#"><i class="fa-solid fa-phone"></i> (449) 123-4567</a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i> Francisco I. Madero</a>
-                <a href="#"><i class="fa-solid fa-envelope"></i> MiCafetería@example.com</a>
+    <footer id="footer-id">
+        <div class="container-footer">
+            <div class="lista-footer lista-extendida">
+                <ul>
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Agenda Experiencias</a></li>
+                </ul>
             </div>
-            <div class="footer-redes">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>            
+            <div class="lista-footer">
+                <ul>
+                    <li><a href="#">Aviso de Privaciadad</a></li>
+                    <li><a href="#">Prevención de Fraudes</a></li>
+                    <li><a href="#">Sorteos y Promociones</a></li>
+                </ul>
+            </div>
+            <div class="lista-footer">
+                <img src="img-friends/logo central perk.webp" alt="">
+            </div>
+            <div class="lista-footer lista-extendida2">
+                <ul>
+                    <li><a href="#"><span>México:</span> 800-366-6600</a></li>
+                    <li><a href="#"><span>E.U.A. y Canadá:</span> 1-800-292-9466</a></li>
+                    <li><a href="#"><span>Resto del mundo:</span> +52 (322) 1760660</a></li>
+                </ul>
+            </div>
+            <div class="lista-footer">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"> </i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"> </i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"> </i> Youtube</a></li>
+                </ul>
             </div>
         </div>
-    
         <div class="newsletter">
-            <h3>suscribete</h3>
+            <h3>Suscríbete</h3>
             <form action="">
                 <input type="email" placeholder="Ingresa tu correo electronico" required>
                 <button type="submit">Suscribirse</button>
             </form>
         </div>
+        <div class="container-footer-b">
+            <p>&#169 2024 F R I E N D S | Todos los derechos reservados</p>
+        </div>
     </footer>
-
+    
 <script src="main.js"></script>
 </body>
 </html>

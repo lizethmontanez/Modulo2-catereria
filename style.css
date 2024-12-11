@@ -531,6 +531,11 @@ body{
 #sandwiches{
     padding: 50px;
     text-align: center;
+    background-image: url(img-friends/background\ negro.jpg);
+}
+
+#franja-azul, #franja-roja, #franja-amarilla{
+    padding: 0;
 }
 
 .grid-sandwich{
@@ -544,8 +549,23 @@ body{
 }
 
 .sandwich{
-    border: 1px solid green;
-    padding: 20px;
+    padding: 15px;
+    background-color: #8073cd;
+}
+
+#sandwiches h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight:lighter;
+    padding-top: 30px;
+}
+
+.sandwich h3{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 0;
 }
 
 
@@ -553,7 +573,7 @@ body{
     width: 100%;
     height: 150px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .sandwich:nth-child(1) {grid-area:sandwich1;}

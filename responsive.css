@@ -1,0 +1,35 @@
+/***pantallas pequeñas***/
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+    .hero h2{
+        font-size: 2rem;
+    }
+
+    #product-list ul{
+        flex-direction:column;
+    }
+
+    .container-footer{
+        display:block;
+        align-items: center;
+        text-align: right;
+    }
+
+    .lista-footer{
+        width: 100vw;
+    }
+}
