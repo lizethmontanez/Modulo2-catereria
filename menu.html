@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-sea-green.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -30,43 +33,44 @@
         </div>
     </section>
 
-
+    <div id="franja-azul"></div>
+    <div id="franja-roja"></div>
+    <div id="franja-amarilla"></div>
     <section id="sandwiches">
-        <div id="franja-azul"></div>
-        <div id="franja-roja"></div>
-        <div id="franja-amarilla"></div>
         <h2>NUESTROS SÁNDWICHES</h2>
-        <div class="grid-sandwich">
-
-            <div class="sandwich">
-                <img src="img/albondigas.jpg" alt="sandwich">
-                <h3>Sandwich de albóndigas</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Para hacer honor a nuestro 2do peor mesero, <span>Joey Tribbiani</span>, traemos a la sección de alimentos los sándwiches. Echa un vistazo a nuestras opciones, y no olvides que: JOEY DOESN'T SHARE FOOD!!!</p>
+        <div class="contenedor-sandwiches">
+            <div class="item-1 sandwich">
+                <img src="img/meatball.jpg" alt="">
+                <h2>JOEY TRIBBIANI'S MEATBALL SANDWICH</h2>
+                <p>Trayendo a vida real el ya conocido <span>meatball sub</span> que Joey intentó salvar de una bala durante su recorrido patrullero con el novio policía de Phoebe</p>
+                <div class="gif"><img src="img/af6ab3d164462da7fa0da701b27816a8.gif" alt=""></div>
             </div>
-
-            <div class="sandwich">
+            <div class="item-2 sandwich">
                 <img src="img/sandwich.jpg" alt="sandwich">
-                <h3>Sandwich de pollo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2>Sándwich de pollo</h2>
+                <p>Si bien, no es el favorito de Joey, sabemos que puede encantarte esta opción.</p>
             </div>
-            
-            <div class="sandwich">
+            <div class="item-3 sandwich">
                 <img src="img/atun.jpg" alt="sandwich">
-                <h3>Sandwich de atún</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2>Sándwich de atún</h2>
+                <p>Un poco <span>fit</span> para nuestro experto en sándwiches.</p>
             </div>
-            
-            <div class="sandwich">
+            <div class="item-4 sandwich">
                 <img src="img/jamon.jpg" alt="sandwich">
-                <h3>Sandwich de jamón</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2>Sándwich de jamón</h2>
+                <p>Un clásico nunca le viene mal a nadie.</p>
             </div>
-            
-            <div class="sandwich">
+            <div class="item-5 sandwich">
                 <img src="img/3 quesos.jpg" alt="sandwich">
-                <h3>Sandwich de 3 quesos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2>Sándwich de tres quesos</h2>
+                <p>Joeay aprueba</p>
             </div>
+        </div>
+        <div class="pizza">
+            <p>Y por supuesto que no puede faltar...</p>
+            <img src="img/pizza.webp" alt="">
+            <h3>JOEY SPECIAL: TWO PIZZAS</h3>
         </div>
     </section>
 
@@ -116,6 +120,7 @@
         </div>
     </footer>
     
-<script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
