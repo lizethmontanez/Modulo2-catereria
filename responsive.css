@@ -15,12 +15,20 @@
         margin: 10px 0;
     }
 
+    header.scrolled .navbar{
+        flex-direction: column;
+        width: 100%;
+        width: 25vh;
+        height: fit-content;
+    }
+
     .hero h2{
         font-size: 2rem;
     }
 
     #product-list ul{
         flex-direction:column;
+        margin-bottom: 15px;
     }
 
     .container-footer{
@@ -31,5 +39,9 @@
 
     .lista-footer{
         width: 100vw;
+    }
+
+    .splide.is-initialized, .splide.is-rendered {
+        width: 120vh;
     }
 }
